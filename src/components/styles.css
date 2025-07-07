@@ -11,7 +11,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     height: 4rem;
     position: relative;
     background-color: black;
@@ -43,7 +43,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     height: 4rem;
     position: relative;
     .hdlogo

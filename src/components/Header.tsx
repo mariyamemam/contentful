@@ -31,10 +31,8 @@ export function Header(){
                     <li>DISCOVER H-D1</li>
                 </ul>
                 <div className="nav-right__actions">
-                <div className="nav-actions__search">Search</div>
+                {/* <div className="nav-actions__search">Search</div> */}
                 <div className="nav-actions__options">
-                    <p>signIn</p>
-                    <p>cart</p>
                 </div>
                 </div>
             </div>
