@@ -1,23 +1,23 @@
 import client from '../contentfulClient';
 import './styles.css'
-import {useState,useEffect} from 'react'
-export function Header(){
-    // const [entries,setEntries]=useState([]);
-    // useEffect(()=>{
-    //     client
-    //     .getEntries({
-    //         links_to_asset:'2HddsGXsBN8iOjEDCSSoEq'
-    //     })
-    //     .then((response) => {
-    //         setEntries(response.items);
-    //     })
-    //     .catch(console.error);
+import { useState, useEffect } from 'react';
 
-    // },[]);
-    return(
+export function Header() {
+    const [imageUrl, setImageUrl] = useState<string>('');
+
+    useEffect(() => {
+        client.getAsset("2HddsGXsBN8iOjEDCSSoEq")
+            .then((asset) => {
+                const url = `https:${asset.fields.file?.url ?? ''}`;
+                setImageUrl(url);
+            })
+            .catch(console.error);
+    }, []);
+
+    return (
         <nav className="header-nav">
             <div className="header-left">
-                <img src='assets/shield-icon-black.svg' alt="H & D logo" className="hdlogo"/>
+                <img src={imageUrl} alt="H & D logo" className="hdlogo" />
             </div>
             <div className="header-right">
                 <ul className="header-right__navlist">
@@ -31,9 +31,9 @@ export function Header(){
                     <li>DISCOVER H-D1</li>
                 </ul>
                 <div className="nav-right__actions">
-                {/* <div className="nav-actions__search">Search</div> */}
-                <div className="nav-actions__options">
-                </div>
+                    {/* <div className="nav-actions__search">Search</div> */}
+                    <div className="nav-actions__options">
+                    </div>
                 </div>
             </div>
         </nav>
