@@ -1,0 +1,121 @@
+.hdlogo
+{
+width: 100px;
+height: 100px;
+
+}
+.navBar-container{
+    background-color: black;
+    max-height:50px;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    margin:none;
+    padding:20px;
+    .nav-right{
+        display: flex;
+        img{
+            align-self: center;
+        }
+    }
+    
+    .nav-left{
+        ul{
+            display: flex;
+            gap:15px;
+            list-style: none;
+        }
+    }
+}
+
+.header-nav{
+    background-color: white;
+    color:black;
+    display:flex;
+
+    .header-left{
+        display:flex;
+    }
+    .header-right{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            gap:10px;
+
+        }
+        .nav-right__actions{
+            float:right;
+            display: flex;
+            .nav-actions__search{
+                display: flex;
+            }
+            .nav-actions__options{
+                display: flex;
+            }
+        }
+        
+    }
+}
+
+.banner{
+    background-color: rgba(245, 74, 12, 0.952);
+    height: 40px;  
+    .banner-content{
+       
+    }
+}
+
+.product-list{
+    display:flex;
+    gap:5px;
+    .product-card{
+        align-content: center;
+        padding: 5px;
+        margin: 5px;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);        
+        height:300px;
+        width:220px;
+        .product-image{
+            align-content: center;
+            img{
+            height:200px;
+            width:200px;
+            }
+        }
+
+    }
+}
+
+
+.footer-container{
+    background-color: black;
+    color:white;
+    .footer-logo{
+        margin:15px;
+        max-width:60%;
+        align-items: center;
+        justify-content: center;
+        margin-left:20%;
+    }
+    .footer-contents{
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        .contents-items{
+            ul{
+                gap:2px;
+                list-style: none;
+                li{
+                    /* margin:2px; */
+                }
+            }
+            .items-title{
+                font-weight: 600;
+            }
+        }
+    }
+}
