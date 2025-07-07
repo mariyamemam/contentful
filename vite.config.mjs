@@ -8,7 +8,7 @@ export default defineConfig({
     environment: 'jsdom', // Simulates a browser for component tests
     setupFiles: './src/setupTests.js', // Equivalent to Jest's setup file
   },
-  base: '',
+  base: '/',
   build: {
     outDir: 'build',
   },
