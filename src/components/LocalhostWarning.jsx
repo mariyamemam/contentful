@@ -1,14 +1,14 @@
 import { Banner } from './Banner';
 import { BestSeller } from './BestSeller';
 import Footer from './Footer';
+import { Header } from './Header';
 import { NavBar } from './NavBar';
-import { Header } from './header';
 
 function LocalhostWarning() {
   return (
     <div className="HomePage">
       <NavBar/>
-      <Header/>
+      <Header />
       <Banner/>
       <BestSeller/>
       <Footer/>

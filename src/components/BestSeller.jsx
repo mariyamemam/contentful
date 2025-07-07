@@ -29,7 +29,7 @@ export function BestSeller() {
                          onMouseEnter={()=>setHoveredIndex(1)}
                          onMouseLeave={()=>setHoveredIndex(0)}>
                         <img src={entry.fields.displayImages[hoverIndex].fields.file.url || entry.fields.displayImages[1].fields.file.url} alt="product display" />
-                    </div>
+                </div>
             <div className="product-desc">
                         <div className="product-desc__label">{entry.fields.productTitle}</div>
                         <div className="product-desc__price">${entry.fields.price}.00</div>

@@ -1,3 +1,6 @@
+html{
+    margin:none;
+}
 .hdlogo
 {
 width: 100px;
@@ -61,8 +64,9 @@ height: 100px;
 }
 
 .banner{
-    background-color: rgba(245, 74, 12, 0.952);
-    height: 40px;  
+    background-color:#fa6600;
+    height: 40px;
+    color:white;  
     .banner-content{
        
     }
@@ -102,19 +106,23 @@ height: 100px;
         margin-left:20%;
     }
     .footer-contents{
+        margin:30px;
         padding: 30px;
         display: flex;
         justify-content: space-between;
         .contents-items{
             ul{
+                margin-left:-30px;
                 gap:2px;
                 list-style: none;
                 li{
-                    /* margin:2px; */
+                    font-size: 24px;
+                    margin-top: 20px;
                 }
             }
             .items-title{
                 font-weight: 600;
+                font-size: 32px;
             }
         }
     }
