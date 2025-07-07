@@ -3,7 +3,7 @@ export default function Footer()
 {
     return(
         <div className="footer-container">
-            <img src ="assets\hd-logo-v2.svg" className="footer-logo"/>
+            <img src ="assets/hd-logo-v2.svg" className="footer-logo"/>
             <hr/>
             <div className="footer-contents">
                 <div class="footer-contents__row1">

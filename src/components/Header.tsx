@@ -17,7 +17,6 @@ export function Header(){
     return(
         <nav className="header-nav">
             <div className="header-left">
-                {/* {console.log(entries)} */}
                 <img src='assets/shield-icon-black.svg' alt="H & D logo" className="hdlogo"/>
             </div>
             <div className="header-right">
