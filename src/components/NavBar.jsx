@@ -18,7 +18,7 @@ export function NavBar()
             .catch(console.error);
     }, []);
     return(
-        
+        <div className="flex-wrapper">
         <nav className="navBar-container">
             <div className="nav-right">
                 <LocationOnIcon className="location-icon"/>
@@ -38,5 +38,6 @@ export function NavBar()
                 </ul>
             </div>
         </nav>
+        </div>
     )
 }

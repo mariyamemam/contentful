@@ -1,6 +1,8 @@
 import client from '../contentfulClient';
 import './styles.css'
 import { useState, useEffect } from 'react';
+import PersonIcon from '@mui/icons-material/Person';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export function Header() {
     const [imageUrl, setImageUrl] = useState<string>('');
@@ -31,8 +33,17 @@ export function Header() {
                     <li>DISCOVER H-D1</li>
                 </ul>
                 <div className="nav-right__actions">
-                    {/* <div className="nav-actions__search">Search</div> */}
+                    <div className="nav-actions__search"></div>
                     <div className="nav-actions__options">
+                        <div className="action__items">
+                            <PersonIcon className='icon'/>
+                            <p className='label'>Sign In</p>
+                        </div>
+                        <div className="action__items">
+                            <ShoppingCartIcon className='icon'/>
+                            <p className='label'>Cart(0)</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
