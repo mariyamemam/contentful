@@ -168,3 +168,21 @@ html, body {
   opacity: 0;
   transform: translateX(-100%);
 }
+
+
+
+.container{
+    border:1px solid;
+    padding:20px;
+    margin:5px;
+    
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    .title{
+        font-weight: 900;
+    }
+    .content{
+        align-self: center;
+    }
+}

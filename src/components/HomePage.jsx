@@ -2,6 +2,7 @@ import { Banner } from './Banner';
 import { BestSeller } from './BestSeller';
 import Footer from './Footer';
 import { Header } from './Header';
+import { HiddenContent } from './HiddenComponent';
 import { NavBar } from './NavBar';
 
 function LocalhostWarning() {
@@ -10,6 +11,7 @@ function LocalhostWarning() {
       <NavBar/>
       <Header />
       <Banner/>
+      <HiddenContent />
       <BestSeller/>
       <Footer/>
     </div>
