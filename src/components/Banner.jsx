@@ -28,6 +28,7 @@ export function Banner() {
 
     return (
         <div className="banner">
+            <center>
             <div className="banner-content">
                 <div className="marquee-slider">
                     {entries.length > 0 && (
@@ -41,6 +42,7 @@ export function Banner() {
                     )}
                 </div>
             </div>
+            </center>
         </div>
     );
 }

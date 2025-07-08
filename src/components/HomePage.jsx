@@ -1,8 +1,11 @@
+import Accessories from './Accesseries';
 import { Banner } from './Banner';
 import { BestSeller } from './BestSeller';
 import Footer from './Footer';
 import { Header } from './Header';
+import { HiddenContent } from './HiddenComponent';
 import { NavBar } from './NavBar';
+import Shopping from './Shopping';
 
 function LocalhostWarning() {
   return (
@@ -10,6 +13,9 @@ function LocalhostWarning() {
       <NavBar/>
       <Header />
       <Banner/>
+      <HiddenContent />
+      <Shopping />
+      <Accessories />
       <BestSeller/>
       <Footer/>
     </div>
