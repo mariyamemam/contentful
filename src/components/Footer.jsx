@@ -19,7 +19,7 @@ export default function Footer()
             <img src ={imageUrl} className="footer-logo"/>
             <hr/>
             <div className="footer-contents">
-                <div class="footer-contents__row1">
+                <div className="footer-contents__row1">
                     <div className='contents-items'>
                         <p className="items-title">LEARN TO RIDE</p>
                         <ul>

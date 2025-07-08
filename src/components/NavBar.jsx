@@ -10,8 +10,7 @@ export function NavBar()
     {
         client
         .getEntries({
-            content_type : 'location',
-            limit:3
+            content_type : 'location'
         })
             .then((response) => {
                 setEntries(response.items);
