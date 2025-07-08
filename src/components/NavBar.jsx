@@ -1,6 +1,7 @@
 import './styles.css'
 import {useState,useEffect} from 'react'
 import client from '.././contentfulClient'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export function NavBar()
 {
@@ -9,8 +10,7 @@ export function NavBar()
     {
         client
         .getEntries({
-            content_type : 'location',
-            limit:3
+            content_type : 'location'
         })
             .then((response) => {
                 setEntries(response.items);
@@ -21,8 +21,7 @@ export function NavBar()
         
         <nav className="navBar-container">
             <div className="nav-right">
-                {/* <img src="" alt="icon" className="location-icon"/> */}
-                <p>Icon</p>
+                <LocationOnIcon className="location-icon"/>
                 <p className="nav-right__label">Select your store</p>
             </div>
             <div className="nav-left">

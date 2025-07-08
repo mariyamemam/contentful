@@ -1,18 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { GlobalStyles } from '@contentful/f36-components';
-import { SDKProvider } from '@contentful/react-apps-toolkit';
+// Remove Contentful imports
+// import { GlobalStyles } from '@contentful/f36-components';
+// import { SDKProvider } from '@contentful/react-apps-toolkit';
 
-import LocalhostWarning from './components/LocalhostWarning';
-import App from './App';
+import HomePage from './components/HomePage';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-root.render(
-  <SDKProvider>
-    <GlobalStyles />
-    <App />
-  </SDKProvider>
-);
+// Render without Contentful SDK
+root.render(<HomePage />);

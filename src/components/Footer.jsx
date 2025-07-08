@@ -1,12 +1,25 @@
 import './styles.css'
+import client from '../contentfulClient'
+import {useState,useEffect} from 'react'
+
 export default function Footer()
 {
+    const [imageUrl, setImageUrl] = useState('');
+    useEffect(() => {
+        client.getAsset('3YB5lrQUPKOeriBCPXJlh9')
+            .then((assets) => {
+                const url = `https:${assets.fields.file?.url ?? ''}`;
+                setImageUrl(url);
+            })
+            .catch(console.error);
+    }, []);
+  
     return(
         <div className="footer-container">
-            <img src ="assets\hd-logo-v2.svg" className="footer-logo"/>
+            <img src ={imageUrl} className="footer-logo"/>
             <hr/>
             <div className="footer-contents">
-                <div class="footer-contents__row1">
+                <div className="footer-contents__row1">
                     <div className='contents-items'>
                         <p className="items-title">LEARN TO RIDE</p>
                         <ul>
