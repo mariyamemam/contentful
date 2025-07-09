@@ -12,6 +12,10 @@ html, body {
     justify-content: center;
     background-color: black;
     width:100%;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-top: 1px;
+    height: 2.25rem;
 }
 
 .navBar-container{
@@ -19,9 +23,6 @@ html, body {
     align-items: center;
     justify-content: space-between;
     /* width: 100%; */
-    height: 4rem;
-    position: relative;
-    max-height:30px;
     color:white;
     display:flex;
     padding:20px;
@@ -30,8 +31,8 @@ html, body {
         gap:2px;
         display: flex;
         .location-icon{
-            height:30px;
-            width:30px;
+            height:16px;
+            width:16px;
         }
     }
     
@@ -132,6 +133,11 @@ html, body {
     .product-list{
         display:flex;
         gap:5px;
+        overflow-x:scroll;
+        scrollbar-width: none;      
+        ::-webkit-scrollbar{
+            display: none;
+        }
         .product-card{
             align-content: center;
             padding: 5px;
