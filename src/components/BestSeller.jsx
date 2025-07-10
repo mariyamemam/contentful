@@ -18,7 +18,7 @@ export function BestSeller() {
     return (
         <div className="bestSeller">
             <div className="component-tile">
-                <h1>Best Sellers</h1>
+                <p className='title'>Best Sellers</p>
             </div>
             <div className="product-list">
                 {entries.map((entry, idx) => (
@@ -44,6 +44,7 @@ export function BestSeller() {
                     </div>
                 ))}
             </div>
+            <hr className="hr-line"/>
         </div>
     );
 }

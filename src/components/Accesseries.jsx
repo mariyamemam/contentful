@@ -14,6 +14,7 @@ export default function Accessories(){
         .catch(console.error);
     })
     return(
+    <div>
         <div className="accessories">
             <div className="content-left">
                 <h1 className="title">YOUR HARLEY, YOUR CANVAS</h1>
@@ -21,6 +22,8 @@ export default function Accessories(){
                 <div className="redirect-button">SHOP PARTS & ACCESSORIES</div>
             </div>
             <img src={imageurl} className="content-right" alt="error while loading image"/>
+            </div>
+         <hr className="hr-line"/>
         </div>
     );
 }

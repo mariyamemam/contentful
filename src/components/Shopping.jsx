@@ -7,13 +7,14 @@ export default function Shopping(){
     return (
         <div className="shoppingTools">
             <div className="shoppingtools-title">
-                <p>SHOPPING TOOLS</p>
+                <p className="title">SHOPPING TOOLS</p>
             </div>
             <div className="shoppingtools-contents">
                 <ShoppingTools title="Financing" icon={<AccountBalanceIcon/>}/>
                 <ShoppingTools title="Test Ride" icon={<TwoWheelerSharpIcon/>}/>
                 <ShoppingTools title="Download Brochure" icon={<ImportContactsSharpIcon/>}/>
             </div>
+            <hr className="hr-line"/>
         </div>
     );
 }
