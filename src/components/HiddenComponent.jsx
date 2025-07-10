@@ -43,7 +43,8 @@ export function HiddenContent() {
 
   if (entry.fields.show === "off"){
     return (
-      <button onClick={handleClick}>Set Show On</button>
+      // <button onClick={handleClick}>Set Show On</button>
+      null
     );
   }
 
