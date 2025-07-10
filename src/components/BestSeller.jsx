@@ -22,12 +22,16 @@ export function BestSeller() {
             </div>
             <div className="product-list">
                 {entries.map((entry, idx) => (
-                    <div className="product-card" key={entry.sys.id}>
                         <div
+                            key={entry.sys.id}
                             className="product-image"
                             onMouseEnter={() => setHoveredIndex(idx)}
                             onMouseLeave={() => setHoveredIndex(null)}
                         >
+                                                <div className="product-card" key={entry.sys.id}>
+                         {entry.fields.tag && (
+                             <div className="product-desc__tag">{entry.fields.tag}</div>
+                          )}
                             <img
                                 src={
                                     hoveredIndex === idx

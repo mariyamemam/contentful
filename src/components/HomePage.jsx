@@ -4,6 +4,7 @@ import { BestSeller } from './BestSeller';
 import Footer from './Footer';
 import { Header } from './Header';
 import { HiddenContent } from './HiddenComponent';
+import MotorCycle from './MotorCycle';
 import { NavBar } from './NavBar';
 import Shopping from './Shopping';
 
@@ -14,6 +15,7 @@ function LocalhostWarning() {
       <Header />
       <Banner/>
       <HiddenContent />
+      <MotorCycle />
       <Shopping />
       <Accessories />
       <BestSeller/>
