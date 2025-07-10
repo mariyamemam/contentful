@@ -3,7 +3,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-}
+}   
 
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -146,21 +146,33 @@ body {
             display: none;
         }
         .product-card{
+            position: relative;
             align-content: center;
             padding: 5px;
             margin: 15px;
             align-items: center;   
+             .product-image {
+                position: relative;
+                }
 
-            .product-image{
-                align-content: center;
+                .product-desc__tag {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                background-color: #fa6600;
+                color: white;
+                padding: 0.25rem 0.5rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                }
                 img{
                 height:296px;
                 width:266px;
-                }
-            }
 
         }
-    }
+  
+          }  
+        }
 }
 
 .footer-container{
@@ -294,3 +306,31 @@ body {
   }
 }
 
+.motorcyclelist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 5px;
+    margin:10px;
+    .motorcycle-category-list{
+    padding: 10px 4px;
+    display:flex;
+    align-items: center;
+    gap:5px;
+    }
+    .motorcycle-view__card{
+        img{
+            width:384;
+            height:340px;
+        }
+    }
+    .motorcycle-view{
+        display: flex;
+        gap:15px;
+        overflow-x:scroll;
+        scrollbar-width: none;      
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
