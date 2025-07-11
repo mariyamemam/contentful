@@ -13,6 +13,7 @@ export default function MotorCycle(){
         })
         .then((response) => {
                 setEntries(response.items);
+                setCategory(response.items[0].fields.motorcycles);
             })
             .catch(console.error);
     }, []);
@@ -34,13 +35,13 @@ export default function MotorCycle(){
                 {category.length > 0 &&
                     category.map((motorcycle) => (
                     <div key={motorcycle.sys.id} className='motorcycle-view__card'>
-                        {console.log(category)}
+                        {/* {console.log(category)} */}
                         {motorcycle.fields.image.map((img)=>(
                             <div className="images" key={img.sys.id}>
                                 <img src={img.fields.file.url}/>
                             </div>
                         ))}
-                        {console.log(category)}
+                        
                         <div className="motorcycle-desc"> 
                             <p>{motorcycle.fields.model}</p>
                             <p>Start Price:{motorcycle.fields.startPrice}$</p>
